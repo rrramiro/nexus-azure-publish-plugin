@@ -11,17 +11,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.carrotgarden.base</groupId>
-        <artifactId>carrot-archon</artifactId>
-        <version>1.5.0</version>
-        <relativePath/>
+        <groupId>org.sonatype.nexus.plugins</groupId>
+        <artifactId>nexus-plugins</artifactId>
+        <version>2.11.3-01</version>
     </parent>
 
-    <groupId>com.carrotgarden.nexus</groupId>
-    <artifactId>carrot-nexus-aws-s3-publish-plugin</artifactId>
+    <groupId>fr.ramiro</groupId>
+    <artifactId>nexus-azure-publish-plugin</artifactId>
     <version>2.2.1-build004-SNAPSHOT</version>
     <packaging>nexus-plugin</packaging>
 
@@ -40,9 +40,10 @@
             https://github.com/carrot-garden/carrot-nexus/blob/master/carrot-nexus-aws-s3-publish-plugin/readme.md
         </pluginSiteUrl>
 
-        <nexus.version>2.2.1</nexus.version>
+        <nexus.version>2.11.3-01</nexus.version>
         <app-lifecycle.version>1.7</app-lifecycle.version>
-        <nexus-capabilities.version>2.1.1</nexus-capabilities.version>
+
+        <nexus-capabilities.version>2.4</nexus-capabilities.version>
 
     </properties>
 
@@ -147,27 +148,32 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.1.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>commons-logging</groupId>-->
+            <!--<artifactId>commons-logging</artifactId>-->
+            <!--<version>1.1.1</version>-->
+        <!--</dependency>-->
 
         <!-- nexus plugin core api -->
         <dependency>
             <groupId>org.sonatype.nexus</groupId>
             <artifactId>nexus-plugin-api</artifactId>
-            <version>${nexus.version}</version>
             <scope>provided</scope>
         </dependency>
 
-        <!-- nexus plugin rest api -->
         <dependency>
             <groupId>org.sonatype.nexus</groupId>
-            <artifactId>nexus-rest-api</artifactId>
-            <version>2.2.1</version>
-            <scope>provided</scope>
+            <artifactId>nexus-plugin-testsupport</artifactId>
+            <scope>test</scope>
         </dependency>
+
+        <!--&lt;!&ndash; nexus plugin rest api &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.sonatype.nexus</groupId>-->
+            <!--<artifactId>nexus-rest-api</artifactId>-->
+            <!--<version>2.2.1</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
 
         <!-- nexus configuration management -->
         <dependency>
@@ -177,32 +183,32 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- basic testing -->
-        <dependency>
-            <groupId>org.sonatype.nexus</groupId>
-            <artifactId>nexus-plugin-test-api</artifactId>
-            <version>${nexus.version}</version>
-            <scope>test</scope>
-        </dependency>
+        <!--&lt;!&ndash; basic testing &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.sonatype.nexus</groupId>-->
+            <!--<artifactId>nexus-plugin-test-api</artifactId>-->
+            <!--<version>${nexus.version}</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
 
         <!-- test harness 1 -->
-        <dependency>
-            <groupId>org.sonatype.nexus</groupId>
-            <artifactId>nexus-test-harness-launcher</artifactId>
-            <version>${nexus.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <!-- missing artifact conflict -->
-                <exclusion>
-                    <groupId>rome</groupId>
-                    <artifactId>rome</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.sonatype.nexus</groupId>-->
+            <!--<artifactId>nexus-test-harness-launcher</artifactId>-->
+            <!--<version>${nexus.version}</version>-->
+            <!--<scope>test</scope>-->
+            <!--<exclusions>-->
+                <!--&lt;!&ndash; missing artifact conflict &ndash;&gt;-->
+                <!--<exclusion>-->
+                    <!--<groupId>rome</groupId>-->
+                    <!--<artifactId>rome</artifactId>-->
+                <!--</exclusion>-->
+                <!--<exclusion>-->
+                    <!--<groupId>junit</groupId>-->
+                    <!--<artifactId>junit</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
 
         <!-- test harness 2 -->
         <dependency>
@@ -216,37 +222,43 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
 
             <!-- nexus webapp -->
-            <dependency>
-                <groupId>org.sonatype.nexus</groupId>
-                <artifactId>nexus-oss-webapp</artifactId>
-                <version>${nexus.version}</version>
-                <type>zip</type>
-                <classifier>bundle</classifier>
-            </dependency>
-            <dependency>
-                <groupId>org.sonatype.nexus</groupId>
-                <artifactId>nexus-webapp-dependencies</artifactId>
-                <version>${nexus.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.sonatype.nexus</groupId>-->
+                <!--<artifactId>nexus-oss-webapp</artifactId>-->
+                <!--<version>${nexus.version}</version>-->
+                <!--<type>zip</type>-->
+                <!--<classifier>bundle</classifier>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.sonatype.nexus</groupId>-->
+                <!--<artifactId>nexus-webapp-dependencies</artifactId>-->
+                <!--<version>${nexus.version}</version>-->
+                <!--<type>pom</type>-->
+                <!--<scope>import</scope>-->
+            <!--</dependency>-->
 
-            <dependency>
-                <groupId>org.sonatype.nexus</groupId>
-                <artifactId>nexus-testsuite-support</artifactId>
-                <version>${nexus.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.sonatype.nexus</groupId>-->
+                <!--<artifactId>nexus-testsuite-support</artifactId>-->
+                <!--<version>${nexus.version}</version>-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>org.sonatype.nexus.plugins</groupId>
                 <artifactId>nexus-capabilities-plugin</artifactId>
-                <version>${nexus-capabilities.version}</version>
+                <version>${nexus.version}</version>
                 <type>nexus-plugin</type>
             </dependency>
             <dependency>
@@ -260,6 +272,11 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.sonatype.nexus</groupId>
+                <artifactId>nexus-plugin-bundle-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
 
             <!-- support annotations -->
             <plugin>
@@ -347,31 +364,31 @@
                             <skip>true</skip>
                         </configuration>
                     </plugin>
-                    <plugin>
-                        <groupId>org.sonatype.nexus.plugins</groupId>
-                        <artifactId>nexus-test-environment-maven-plugin</artifactId>
-                        <version>${nexus.version}</version>
-                        <configuration>
-                            <nexusVersion>${nexus.version}</nexusVersion>
-                            <nexusBundleName>nexus-oss-webapp-${nexus.version}</nexusBundleName>
-                            <nexusBundleArtifact>
-                                <groupId>org.sonatype.nexus</groupId>
-                                <artifactId>nexus-oss-webapp</artifactId>
-                                <version>${nexus.version}</version>
-                                <type>zip</type>
-                                <classifier>bundle</classifier>
-                            </nexusBundleArtifact>
-                            <nexusPluginsArtifacts>
-                            </nexusPluginsArtifacts>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>setup-nexus-plugin-environment</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+                    <!--<plugin>-->
+                        <!--<groupId>org.sonatype.nexus.plugins</groupId>-->
+                        <!--<artifactId>nexus-test-environment-maven-plugin</artifactId>-->
+                        <!--<version>${nexus.version}</version>-->
+                        <!--<configuration>-->
+                            <!--<nexusVersion>${nexus.version}</nexusVersion>-->
+                            <!--<nexusBundleName>nexus-oss-webapp-${nexus.version}</nexusBundleName>-->
+                            <!--<nexusBundleArtifact>-->
+                                <!--<groupId>org.sonatype.nexus</groupId>-->
+                                <!--<artifactId>nexus-oss-webapp</artifactId>-->
+                                <!--<version>${nexus.version}</version>-->
+                                <!--<type>zip</type>-->
+                                <!--<classifier>bundle</classifier>-->
+                            <!--</nexusBundleArtifact>-->
+                            <!--<nexusPluginsArtifacts>-->
+                            <!--</nexusPluginsArtifacts>-->
+                        <!--</configuration>-->
+                        <!--<executions>-->
+                            <!--<execution>-->
+                                <!--<goals>-->
+                                    <!--<goal>setup-nexus-plugin-environment</goal>-->
+                                <!--</goals>-->
+                            <!--</execution>-->
+                        <!--</executions>-->
+                    <!--</plugin>-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>

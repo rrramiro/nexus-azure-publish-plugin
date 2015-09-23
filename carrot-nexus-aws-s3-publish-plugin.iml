@@ -12,232 +12,192 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/nexus/plugins/nexus-capabilities-plugin/2.11.3-01/nexus-capabilities-plugin-2.11.3-01.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: com.typesafe:config:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.sonatype.sisu.inject:guice-assistedinject:3.1.2" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-guice:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-annotation:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk:1.3.26" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.2.2" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-plugin-api:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-api:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-locks:0.0.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: eu.medsea.mimeutil:mime-util:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-utils:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus:plexus-task-scheduler:1.6.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus.appevents:plexus-app-events-api:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-inject-bean:2.3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-guice:no_aop:3.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-mailer:1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-velocity:1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.velocity:velocity:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-plugin-api:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-core:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-configuration-model:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:base-configuration:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-repository-metadata-api:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-repository-metadata-model:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:jcl-over-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ch.qos.logback:logback-core:1.1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: ch.qos.logback:logback-classic:1.1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-lifecycle:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.smc:statemap:java:6.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-eventbus:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-beanutils:commons-beanutils-core:1.8.3-SONATYPE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: oro:oro:2.0.8" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.mail:mail:1.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.configuration:base-configuration:1.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plugin:plugin-api:1.1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-rest-api:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-app:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-plugin-manager:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plugin:plugin-model-api:1.1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-oss-edition:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security.realms:security-xml-realm:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-model-xml:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-model:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-core:1.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.pr:sisu-problem-reporter:1.5.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.jira.mediator:sisu-jira-mediator-attachments:1.3.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpmime:4.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-encryptor:1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.swizzle:swizzle-jira:1.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.swizzle:swizzle-stream:1.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.xmlrpc:xmlrpc-client:3.1.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.xmlrpc:xmlrpc-common:3.1.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.ws.commons.util:ws-commons-util:1.0.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-logging-extras:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-logging-extras-appender:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: ch.qos.logback:logback-core:1.0.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-configuration:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus:plexus-cipher:1.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-configuration:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-proxy:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-repository-metadata-api:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-repository-metadata-model:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus.appevents:simple-event-multicaster:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.ning:async-http-client:1.6.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-httpclient:commons-httpclient:3.1.SONATYPE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-ehcache:1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.ehcache:ehcache-core:2.5.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-beanutils:commons-beanutils-core:1.7.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-charger:1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-resource-scanner:1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-rest-api-model:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-web-utils:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.appcontext:appcontext:3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-inject-plexus:2.3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-utils:3.0.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.enterprise:cdi-api:1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-classworlds:2.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus:plexus-restlet-bridge:1.22" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.restlet:org.restlet:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.restlet:org.restlet.ext.fileupload:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.restlet:org.restlet.ext.velocity:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.restlet:org.restlet.ext.jaxrs:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.ws.rs:javax.ws.rs:1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.json:org.json:2.0-NEXUS-3758" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.noelios.restlet:com.noelios.restlet:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.noelios.restlet:com.noelios.restlet.ext.httpclient:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.noelios.restlet:com.noelios.restlet.ext.servlet:1.1.6-SONATYPE-5348-V4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plugin:plugin-host-api:1.1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-rest-api:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-system:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-ehcache:1.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-rest-model:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.security:security-web:2.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-guice:1.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.inject:guice-multibindings:3.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.inject:guice-servlet:3.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-utils:3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-fileupload:commons-fileupload:1.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.thoughtworks.xstream:xstream:1.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.plexus:plexus-cipher:1.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.plexus:plexus-interpolation:1.16" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus.xstream:xstream:1.4.6-SONATYPE-03" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-web:1.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus.capabilities:nexus-capabilities-model:2.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-eventbus:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-plugin-test-api:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-test-common:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.carrotsearch:junit-benchmarks:0.3.0-SONATYPE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.h2database:h2:1.3.154" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-test-harness-launcher:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-test-utils:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-configuration-model:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.maven:maven-model:3.0.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.maven:maven-repository-metadata:3.0.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.plugins:nexus-indexer-lucene-plugin:2.2.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus.indexer-lucene:nexus-indexer-lucene-model:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.indexer:indexer-artifact:4.1.3-SONATYPE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.indexer:indexer-core:4.1.3-SONATYPE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-core:3.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-highlighter:3.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.lucene:lucene-memory:3.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.aether:aether-api:1.13.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.aether:aether-util:1.13.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: de.schlichtherle.truezip:truezip-file:7.0-rc1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: de.schlichtherle.truezip:truezip-kernel:7.0-rc1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: de.schlichtherle.truezip:truezip-driver-file:7.0-rc1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: de.schlichtherle.truezip:truezip-driver-zip:7.0-rc1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-rest-client-java:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.icegreen:greenmail:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.thoughtworks.qdox:qdox:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: jmock:jmock:1.0.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:6.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.yaml:snakeyaml:1.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.litmus:litmus-testsupport:1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.gossip:gossip-support:1.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.gossip:gossip-bootstrap:1.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.intellij:annotations:9.0.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit-dep:4.10" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.incava:java-diff:1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.9.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4-common:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-reflect:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-mockito:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-support:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4-rule:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-classloading-base:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-core:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.javassist:javassist:3.16.1-GA" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-classloading-xstream:1.4.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.googlecode.junit-ext:junit-ext:junit45:1.0-RC3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.goodies:goodies-common:1.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.maven:maven-model:3.0.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.maven:maven-repository-metadata:3.0.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.aether:aether-api:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.aether:aether-util:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.aether:aether-spi:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.aether:aether-impl:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-security:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-ehcache:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.inject:guice-servlet:3.1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-security-realms:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-core:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-guice:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.shiro:shiro-web:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-guice:3.1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.inject:guice-multibindings:3.1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-locks:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-ehcache:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.ehcache:ehcache-core:2.5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-resource-scanner:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tika:tika-core:1.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-plugin-bundle-model:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: joda-time:joda-time:2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.yammer.metrics:metrics-httpclient:2.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-i18n:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: bitwalker:UserAgentUtils:1.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:16.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.intellij:annotations:12.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.findbugs:jsr305:2.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus:nexus-scheduler:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu:sisu-mailer:1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-common:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.gossip:gossip-support:1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.gossip:gossip-bootstrap:1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-template:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.sisu.goodies:goodies-inject:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-plugin-testsupport:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-test-common:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.h2database:h2:1.3.175" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.databene:contiperf:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: httpunit:httpunit:1.6.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: jtidy:jtidy:4aug2000r7-dev" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.http-testing-harness:server-provider:0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.http-testing-harness:hth-api:0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-servlet:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-security:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-server:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-webapp:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-xml:8.1.16.v20140903" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.plexus:plexus-jetty-testsuite:2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-webapp:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-xml:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-servlet:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-security:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-client:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-http:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-io:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-servlets:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-continuation:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-util:8.1.1.v20120215" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http-shared:1.0-beta-5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: nekohtml:xercesMinimal:1.9.6.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: nekohtml:nekohtml:1.9.6.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.plexus:classworlds-configuration-io:1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.shared:maven-verifier:1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:jul-to-slf4j:1.6.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: ch.qos.logback:logback-classic:1.0.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:10.0.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: emma:emma:2.0.5312" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-it-helper-plugin:cp:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-testsuite-support:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-launcher:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-bundle-launcher:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-file-tasks:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant:1.8.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant-launcher:1.8.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.sf.smc:statemap:java:6.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-maven-bridge:2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-model-builder:3.0.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-settings-builder:3.0.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-settings:3.0.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-client:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-http:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-io:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-servlets:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-continuation:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-util:8.1.16.v20140903" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-core:tests:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.sonatype.nexus.plugins:nexus-capabilities-model:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-testsuite-support:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-launcher:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-bundle-launcher:1.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-file-tasks:1.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant:1.8.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.ant:ant-launcher:1.8.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-maven-bridge:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-model-builder:3.0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-settings-builder:3.0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-settings:3.0.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-aether-provider:3.0.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.aether:aether-spi:1.13.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.aether:aether-impl:1.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven:maven-aether-provider:3.0.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.aether:aether-connector-wagon:1.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http:2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.maven.wagon:wagon-http-shared4:2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.jsoup:jsoup:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-bootstrap:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-jetty8:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty:jetty-server:8.1.3.v20120416" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.client:nexus-client-core:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-client:1.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-core:1.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.12" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-testsuite-client:2.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.goodies:goodies-marshal:1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu:sisu-guice:3.1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.capabilities:nexus-capabilities-client:2.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.commons:commons-exec:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-bootstrap:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:jul-to-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-client-core:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.plugins:nexus-restlet1x-model:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.thoughtworks.xstream:xstream:1.4.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.siesta:siesta-client:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.siesta:siesta-jackson:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus:nexus-testsuite-client:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.goodies:goodies-marshal:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.litmus:litmus-testsupport:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-junit:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-core:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-guice:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-java:1.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.easymock:easymock:3.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: cglib:cglib-nodep:2.2.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.objenesis:objenesis:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-all:1.9.5" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/sonatype/nexus/plugins/nexus-capabilities-plugin/2.1.1/nexus-capabilities-plugin-2.1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.easytesting:fest-assert-core:2.0M10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.easytesting:fest-util:1.2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.incava:java-diff:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.objenesis:objenesis:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.9.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4-common:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-reflect:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-mockito:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-support:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-junit4-rule:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-classloading-base:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-core:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.javassist:javassist:3.17.1-GA" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-classloading-xstream:1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.plugins:nexus-groovyremote-client:2.11.3-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.groovy:groovy-all:2.1.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.groovy.modules.remote:remote-core:0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.groovy.modules.remote:remote-transport-http:0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.capabilities:nexus-capabilities-client:2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.client:nexus-client-core:2.5.0-01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-client:1.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-core:1.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.jersey:jersey-json:1.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.jackson:jackson-xc:1.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.sisu.siesta:siesta-common:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.sonatype.nexus.capabilities:nexus-capabilities-model:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
   </component>
 </module>

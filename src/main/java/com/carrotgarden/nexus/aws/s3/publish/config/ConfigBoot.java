@@ -27,7 +27,7 @@ import com.google.common.eventbus.Subscribe;
  */
 @Named
 @Singleton
-public class ConfigBoot implements EventBus.LoadOnStart {
+public class ConfigBoot { //implements EventBus.LoadOnStart {
 
 	protected final Logger log = LoggerFactory.getLogger(getClass());
 

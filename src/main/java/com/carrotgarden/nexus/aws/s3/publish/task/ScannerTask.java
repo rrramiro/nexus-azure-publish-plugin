@@ -199,7 +199,7 @@ public class ScannerTask extends BaseTask {
 		try {
 			Thread.sleep(millis);
 		} catch (final InterruptedException e) {
-			throw new TaskInterruptedException("sleep interrupted", e);
+			throw new TaskInterruptedException(e);
 		} finally {
 		}
 	}

@@ -9,6 +9,7 @@ package com.carrotgarden.nexus.aws.s3.publish.config;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
@@ -21,7 +22,7 @@ import org.sonatype.nexus.plugins.capabilities.Capability;
 import org.sonatype.nexus.plugins.capabilities.CapabilityRegistry;
 import org.sonatype.nexus.plugins.capabilities.Condition;
 import org.sonatype.nexus.plugins.capabilities.internal.condition.NexusIsActiveCondition;
-import org.sonatype.nexus.plugins.capabilities.support.CapabilitySupport;
+import org.sonatype.nexus.capability.support.CapabilitySupport;
 import org.sonatype.nexus.proxy.maven.gav.Gav;
 import org.sonatype.nexus.proxy.maven.gav.GavCalculator;
 import org.sonatype.nexus.proxy.registry.RepositoryRegistry;
@@ -38,12 +39,13 @@ import com.carrotgarden.nexus.aws.s3.publish.metrics.Reporter;
 import com.carrotgarden.nexus.aws.s3.publish.task.TaskManager;
 import com.carrotgarden.nexus.aws.s3.publish.util.ConfigHelp;
 import com.carrotgarden.nexus.aws.s3.publish.util.RepoHelp;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * plug-in configuration life cycle manager
  */
 @Named(ConfigDescriptor.NAME)
-public class ConfigCapability extends CapabilitySupport implements Capability,
+public class ConfigCapability extends CapabilitySupport<Object> implements Capability,
 		ConfigEntry {
 
 	protected final Logger log = LoggerFactory.getLogger(getClass());
@@ -408,6 +410,11 @@ public class ConfigCapability extends CapabilitySupport implements Capability,
 
 		return "Publish [" + configId() + "] " + repoName();
 
+	}
+
+	@Override
+	protected Object createConfig(Map map) throws Exception {
+		throw new NotImplementedException();
 	}
 
 	@Override

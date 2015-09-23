@@ -12,9 +12,14 @@ import static org.sonatype.nexus.plugins.capabilities.CapabilityType.*;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
+import org.sonatype.nexus.formfields.FormField;
 import org.sonatype.nexus.plugins.capabilities.CapabilityDescriptor;
 import org.sonatype.nexus.plugins.capabilities.CapabilityType;
-import org.sonatype.nexus.plugins.capabilities.support.CapabilityDescriptorSupport;
+import org.sonatype.nexus.capability.support.CapabilityDescriptorSupport;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * capability configuration form
@@ -31,10 +36,18 @@ public class ConfigDescriptor extends CapabilityDescriptorSupport implements
 
 	public static final CapabilityType TYPE = capabilityType(NAME);
 
-	public ConfigDescriptor() {
-
-		super(TYPE, Form.formName(), Form.formHelp(), Form.formFields());
-
+	@Override
+	public CapabilityType type() {
+		return TYPE;
 	}
 
+	@Override
+	public String name() {
+		return NAME;
+	}
+
+	@Override
+	public List<FormField> formFields() {
+		return Arrays.asList(Form.formFields());
+	}
 }
